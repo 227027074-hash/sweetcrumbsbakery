@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <p>Freshly Baked with Love 💜</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Our Products</a>
+    <a href="about.html">About Us</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html">Your Orders</a>
+    <a href="category.html"></a>
+   
+    
+    <a href="cart.html" class="cart-page-link">
+    🛒 Cart (<span id="cartCount">0</span>)
+</a>
+
+    <a href="wishlist.html">♡ Wishlist (<span id="wishCount">0</span>)</a>
+</nav>
+
+<section id="products" class="category-section">
+
+    <h2>Explore Our Bakery Collection 🧁</h2>
+    <p class="category-subtitle">
+        Choose your favourite category and explore our delicious varieties!
+    </p>
+
+    <div class="category-grid">
+
+        <a href="category.html?category=Cakes" class="category-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Cakes">
+            <h3>Cakes</h3>
+            <span>Explore Cakes →</span>
+        </a>
+
+        <a href="category.html?category=Cookies" class="category-card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" alt="Cookies">
+            <h3>Cookies</h3>
+            <span>Explore Cookies →</span>
+        </a>
+
+        <a href="category.html?category=Pastries" class="category-card">
+            <img src="image/chocolate truffle pastry.jpg" alt="Pastries">
+            <h3>Pastries</h3>
+            <span>Explore Pastries →</span>
+        </a>
+
+        <a href="category.html?category=Bread" class="category-card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Bread">
+            <h3>Breads</h3>
+            <span>Explore Breads →</span>
+        </a>
+
+        <a href="category.html?category=Desserts" class="category-card">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d" alt="Desserts">
+            <h3>Desserts</h3>
+            <span>Explore Desserts →</span>
+        </a>
+
+        <a href="category.html?category=Savouries" class="category-card">
+            <img src="image/vegpuff.jpg" alt="Savouries">
+            <h3>Savouries</h3>
+            <span>Explore Savouries →</span>
+        </a>
+
+    </div>
+</section>
+
+
+
+
+<aside id="cartPanel" class="cart-panel" hidden>
+    <button id="closeCart" class="close-btn" type="button">✕ Close</button>
+    <h2>Shopping Cart 🛒</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button id="clearCart" type="button">Clear Cart</button>
+    <button id="checkoutBtn" type="button">Proceed to Order</button>
+</aside>
+
+<dialog id="productDialog">
+    <button id="closeDetails" class="close-btn" type="button">✕ Close</button>
+    <div id="productDetails"></div>
+</dialog>
+
+<dialog id="orderDialog">
+    <button id="closeOrder" class="close-btn" type="button">✕ Close</button>
+    <h2>Place Your Order 🧁</h2>
+    <form id="orderForm" class="simple-form">
+        <input id="customerName" placeholder="Full name" required>
+        <input id="customerPhone" type="tel" placeholder="Phone number" required>
+        <textarea id="customerAddress" placeholder="Delivery address" required></textarea>
+        <select id="paymentMethod">
+            <option>Cash on Delivery</option>
+            <option>Pay on collection</option>
+        </select>
+        <p>Total: ₹<span id="orderTotal">0</span></p>
+        <button type="submit">Order on WhatsApp</button>
+    </form>
+</dialog>
+
+<footer>
+    <p>© 2026 Sweet Crumbs Bakery 💜</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

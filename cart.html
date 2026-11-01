@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <p>Freshly Baked with Love 💜</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Our Products</a>
+        <a href="about.html">About Us</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Your Orders</a>
+    </nav>
+</header>
+
+<main class="cart-page">
+    <h1>Shopping Cart 🛒</h1>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-total">
+        <h2>Total: <span id="cartTotal">₹0</span></h2>
+    </div>
+
+    <div class="cart-actions">
+        <button class="clear-cart-btn" id="clearCartBtn">
+            Clear Cart
+        </button>
+
+        <a href="products.html" class="continue-shopping-btn">
+            Continue Shopping
+        </a>
+
+        <button class="proceed-order-btn" id="proceedOrderBtn">
+            Proceed to Order
+        </button>
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

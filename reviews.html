@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <p>Freshly Baked with Love 💜</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Our Products</a>
+    <a href="about.html">About Us</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html">Your Orders</a>
+    
+    <button id="cartBtn" type="button">🛒 Cart (<span id="cartCount">0</span>)</button>
+    <a href="products.html#wishlist">♡ Wishlist (<span id="wishCount">0</span>)</a>
+</nav>
+
+<section class="info" id="reviews">
+    <h2>Customer Reviews ⭐</h2>
+
+    <div class="review-grid" id="reviewList">
+        <article class="review">
+            <h3>★★★★★</h3>
+            <p>The cake was delicious and beautifully made!</p>
+            <strong>Customer 1</strong>
+        </article>
+
+        <article class="review">
+            <h3>★★★★★</h3>
+            <p>Fresh bread and lovely pastries!</p>
+            <strong>Customer 2</strong>
+        </article>
+
+        <article class="review">
+            <h3>★★★★☆</h3>
+            <p>Loved the cupcakes. Will order again!</p>
+            <strong>Customer 3</strong>
+        </article>
+    </div>
+
+    <h3 class="review-heading">Write a Review</h3>
+
+    <form id="reviewForm" class="simple-form">
+        <input id="reviewName" placeholder="Your name" required>
+        <select id="reviewRating">
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <textarea id="reviewText" placeholder="Write your review" required></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Sweet Crumbs Bakery 💜</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

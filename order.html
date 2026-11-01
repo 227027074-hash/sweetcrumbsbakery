@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order | Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body class="dark-mode">
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <p>Freshly Baked with Love 💜</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Our Products</a>
+    <a href="about.html">About Us</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html">Your Orders</a>
+</nav>
+
+<main class="order-page">
+
+    <section class="order-card">
+
+        <div class="order-heading">
+            <span>🧁</span>
+            <h2>Place Your Order</h2>
+            <p>Freshly baked happiness, delivered to you!</p>
+        </div>
+
+        <form id="orderForm">
+
+            <h3>👤 Customer Details</h3>
+
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName"
+                   placeholder="Enter your full name" required>
+
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone"
+                   placeholder="Enter your phone number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="customerAddress">Delivery Address</label>
+            <textarea id="customerAddress"
+                      placeholder="Enter your complete address"
+                      rows="3" required></textarea>
+
+            <hr>
+
+            <h3>🍰 Your Order Details</h3>
+
+            <label >Products and Quantity</label>
+           <div id="orderDetails"></div>
+            <hr>
+
+            <h3>💳 Payment Method</h3>
+
+            <label class="payment-option">
+                <input type="radio" name="payment"
+                       value="Cash on Delivery" required>
+                <span>💵 Cash on Delivery</span>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="payment" value="UPI">
+                <span>📱 UPI Payment</span>
+            </label>
+
+            <p class="payment-note">
+                Choose your preferred payment method.
+            </p>
+
+            <button type="submit" class="place-order-btn">
+                Place Your Order 💜
+            </button>
+
+            <a href="products.html" class="back-shopping">
+                ← Continue Shopping
+            </a>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sweet Crumbs Bakery 💜</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
